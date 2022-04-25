@@ -1,1 +1,1 @@
-install.packages(c("tidyverse", "hrbrthemes"))
+install.packages(c("tidyverse", "report"))

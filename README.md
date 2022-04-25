@@ -1,8 +1,8 @@
-# Materialien zur VL Angewandte Analyseverfahren, SoSe 2022
+# Materialien zur VL Anwendungsorientierte Analyseverfahren, SoSe 2022
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mscharkow/2022-AA-VL/HEAD?urlpath=rstudio)
 
-Dieses Repository enthält alle begleitenden Materialien zur Vorlesung **Angewandte Analyseverfahren**.
+Dieses Repository enthält alle begleitenden Materialien zur Vorlesung **Anwendungsorientierte Analyseverfahren**.
 
 Die Übungen lassen sich auf verschiedene Weise bearbeiten:
 
