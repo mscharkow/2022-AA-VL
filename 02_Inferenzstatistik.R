@@ -41,7 +41,7 @@ sum(p_vals <= .05)
 
 # JGU-Studierende sind etwas schlauer im Schnitt
 iq_jgu = rnorm(n = 31000, mean = 110, sd = 15)
-summary(iq_population)
+summary(iq_jgu)
 
 # Wir vergleichen 20 Studierende mit 20 anderen Mainzern
 
