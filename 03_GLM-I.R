@@ -19,7 +19,7 @@ autylewis04 %>%
 
 autylewis04 %>%
   group_by(pepsi_placement) %>%
-  summarise(m = mean(pepsi_chosen), sd = sd(pepsi_chosen))
+  summarise(n = n(), m = mean(pepsi_chosen))
 
 # Chi-Quadrat Test --------------------------------------------------------
 table(autylewis04$pepsi_placement, autylewis04$pepsi_chosen) %>%
