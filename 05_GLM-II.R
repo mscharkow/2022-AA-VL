@@ -32,8 +32,21 @@ summary(model_lm1)
 anova(model_null, model_lm1)
 
 # Lineares Modell mit Factor Modus (automatische Dummy-Codierung)
-model_lm2 = lm(Rezeptionswahrscheinlichkeit ~ Modus, kuempel2019)
+model_lm2 = lm(Rezeptionswahrscheinlichkeit ~ Modus, data = kuempel2019)
 summary(model_lm2)
 
 # Modellvergleich mit Model 1
 anova(model_lm1, model_lm2)
+
+# Bonusaufgabe ------------------------------------------------------------
+# Quelle: https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-07-07/readme.md
+
+# Für SPSS-Nutzer: coffee.sav im data Ordner
+
+coffee_ratings <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-07-07/coffee_ratings.csv')
+coffee_ratings
+
+# Unterscheiden sich die Bewertungen (total_cup_points) in Abhängigkeit der Kaffeesorte (species)?
+# Spezifizieren und interpretieren sie ein einfaches GLM, einen T-Test oder eine ANOVA.
+# Super-Sonder-Bonus: Visualisieren sie die geschätzten Randmittelwerte durch Anpassung des Codes aus Sitzung 4.
+
