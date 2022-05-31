@@ -7,7 +7,7 @@ library(report)
 library(marginaleffects)
 theme_set(theme_bw())
 
-# Mittelwertvergleiche
+# Korrelation und Regression
 
 # Beispielstudie: Johannes, N., Dienlin, T., Bakhshi, H., & Przybylski, A. K. (2022). No effect of different types of media on well-being. Scientific reports, 12(1), 1-13.
 # Daten: https://osf.io/yn7sx/
