@@ -1,6 +1,6 @@
 # VL Anwendungsorientierte Analyseverfahren, Prof. Dr. Michael Scharkow
 # Wenn RStudio ihnen nicht vorschlägt, die Pakete zu installieren:
-# install.packages(c("tidyverse", "report", "marginaleffects"))
+# install.packages(c("tidyverse", "report", "performance"))
 
 library(tidyverse)
 library(report)
