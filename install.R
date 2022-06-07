@@ -1,1 +1,1 @@
-install.packages(c("tidyverse", "report", "marginaleffects"))
+install.packages(c("tidyverse", "report", "marginaleffects", "performance", "see", "patchwork"))
