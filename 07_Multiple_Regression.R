@@ -11,7 +11,8 @@ theme_set(theme_bw())
 
 # Beispielstudie: van Erkel, P. F., & Van Aelst, P. (2021). Why don’t we learn from social media? Studying effects of and mechanisms behind social media news use on general surveillance political knowledge. Political Communication, 38(4), 407-425.
 
-vanerkel21 = haven::read_sav("data/VanErkel_2021.sav")
+vanerkel21 = haven::read_sav("data/VanErkel_2021.sav") %>%
+  mutate(Education = as_factor(Education))
 vanerkel21
 
 # Modell 1: Nur Soziodemographie
