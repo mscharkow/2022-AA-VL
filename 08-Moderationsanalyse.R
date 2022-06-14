@@ -39,10 +39,13 @@ marginaleffects::predictions(m1, variables = c("schwab", "female")) %>%
 # Atol ist hier zentriert
 m2 = lm(gesamt ~ schwab * atol_centered, data = vb17)
 summary(m2)
-report_table(m2)
+report::report_table(m2)
+
+# Average marginal effects (AME)
+marginaleffects::marginaleffects(m2) %>%
+  summary()
 
 # Konditionale Effekte durch Zentrieren
-
 lm(gesamt ~ schwab * I(atol-1), data = vb17) # atol = 1
 lm(gesamt ~ schwab * I(atol-5), data = vb17) # atol = 5
 
