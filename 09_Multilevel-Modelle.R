@@ -13,9 +13,11 @@ theme_set(theme_bw())
 uni_fb = haven::read_sav("data/Faehnrich_2020.sav")
 uni_fb
 
-# Nullmodell
+# Nullmodell und ICC
 m0 = lmer(comments_count ~ 1 + (1 | uni), data = uni_fb)
 summary(m0)
+
+performance::icc(m0)
 
 # Vorausgesagte Mittelwerte (inkl. varying intercepts)
 marginaleffects::marginalmeans(m0)
