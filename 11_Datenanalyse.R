@@ -41,7 +41,8 @@ marginaleffects::marginalmeans(m4, variables = "country") %>%
   summary()
 
 marginaleffects::marginalmeans(m4, variables = "country") %>%
-  ggplot(aes(x = reorder(value, marginalmean), y = marginalmean,
+  tidy() %>%
+  ggplot(aes(x = reorder(value, estimate), y = estimate,
              ymin = conf.low, ymax = conf.high))+
   geom_pointrange()+
   coord_flip()+
@@ -52,7 +53,8 @@ marginaleffects::marginalmeans(m4, variables = "female") %>%
   summary()
 
 marginaleffects::marginalmeans(m4, variables = "female") %>%
-  ggplot(aes(x = reorder(value, marginalmean), y = marginalmean,
+  tidy() %>%
+  ggplot(aes(x = reorder(value, estimate), y = estimate,
              ymin = conf.low, ymax = conf.high))+
   geom_pointrange()+
   labs(x = "", y = "Impfbereitschaft (95%-CI)")
